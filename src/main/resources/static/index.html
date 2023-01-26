@@ -3,24 +3,95 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html>
+<html lang="es">
     <head>
-        <title>Tienda en linea</title>
+        <title>Tienda en línea</title>
         <meta charset="UTF-8">
+        <meta name="description" content="Pagina de la leccion 2"/>
+        <meta name="keywords" content="html5, css, web, fidelitas"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>  <!--contenedor-->
-            <h1 style="text-align: center;">Home</h1> <!--Titulo nivel 1--> 
-            <p>Bienvenidos al curso de Desarrollo Web y Patrones</p>  <!-- Parrafos -->
-        </div>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, iaculis dis libero viverra venenatis aliquam et ut, felis phasellus in lectus primis porta. Praesent sagittis iaculis nisl odio neque metus varius non viverra, per pharetra dignissim mattis ut vel aenean magna et, lobortis phasellus hendrerit sociis sollicitudin vehicula auctor suscipit. Morbi senectus dignissim enim fermentum praesent quisque per mus, libero primis himenaeos integer habitasse lacinia nisi viverra suspendisse, phasellus nisl natoque conubia tortor malesuada condimentum.</p>
-        <p>Cum nec luctus justo accumsan ac lectus commodo aliquam, aliquet tincidunt vehicula est sed tempus primis, velit condimentum bibendum enim tristique risus ad. Pulvinar facilisi vel mattis proin sed mus lacus orci, consequat quam placerat gravida per turpis at, in aliquam enim pretium condimentum mauris cum. Potenti nullam cum sagittis magna litora suspendisse sollicitudin natoque ut dapibus, semper per viverra hac nascetur dui neque imperdiet cursus tempus euismod, bibendum suscipit pretium phasellus taciti laoreet maecenas nec congue. Magna erat hac vivamus commodo lobortis cursus platea urna odio, varius nisl ligula blandit mauris nullam ultrices id nisi auctor, cum malesuada dis in diam congue at inceptos cubilia, est sollicitudin dictumst tempus leo accumsan arcu non.</p>
-        <p>Iaculis mi enim aenean litora ligula parturient cum, proin volutpat eget posuere turpis sodales, ac leo nostra cubilia placerat magna. Netus ultrices pellentesque fermentum id lacinia tempor taciti per ullamcorper, at dui posuere suspendisse eget volutpat ad habitant potenti porttitor, cras iaculis aliquam quam vitae leo integer sodales. Litora magnis natoque pretium class potenti accumsan donec semper, scelerisque curae tempor facilisi arcu hendrerit himenaeos facilisis quis, pulvinar venenatis blandit vivamus habitasse montes platea.</p>
-        <br/> 
-        <br/> <!-- Salto de linea -->
-        <br/>
-        <br/>
-        <p>Ultima linea....</p>
+        <!-- Esta etiqueta indica al navegador de que es un encabezado --> 
+        <header id="encabezado">
+            <h1>Tienda en línea</h1>
+            <br/>
+        </header>
+        <nav id="menu">
+            <a href="ejemplo9.html">Atras</a>
+            <a href="index.html">Home</a>
+            <a href="ejemplo2.html">Adelante</a>
+        </nav>
+        <aside id="barraLateral">
+            <h2>Productos más vendidos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, iaculis dis libero viverra venenatis aliquam et ut, felis phasellus in lectus primis porta. Praesent sagittis iaculis nisl odio neque metus varius non viverra, per pharetra dignissim mattis ut vel aenean magna et, lobortis phasellus hendrerit sociis sollicitudin vehicula auctor suscipit. Morbi senectus dignissim enim fermentum praesent quisque per mus, libero primis himenaeos integer habitasse lacinia nisi viverra suspendisse, phasellus nisl natoque conubia tortor malesuada condimentum.</p>
+        </aside>
+        <section id="contenido">
+            <h2>Artículos más vendidos</h2>
+            <article>
+                <header>Asus Vivobook</header>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, iaculis dis libero viverra venenatis aliquam et ut, felis phasellus in lectus primis porta. Praesent sagittis iaculis nisl odio neque metus varius non viverra, per pharetra dignissim mattis ut vel aenean magna et, lobortis phasellus hendrerit sociis sollicitudin vehicula auctor suscipit. Morbi senectus dignissim enim fermentum praesent quisque per mus, libero primis himenaeos integer habitasse lacinia nisi viverra suspendisse, phasellus nisl natoque conubia tortor malesuada condimentum.</p>
+                <figure>
+                    <img src="images/asusvivobook.jpg" alt="Asus Vivobook" width="200"/>
+                    <figcaption>Imagenes con fines educativos</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>Alienware ATD 900</header>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, iaculis dis libero viverra venenatis aliquam et ut, felis phasellus in lectus primis porta. Praesent sagittis iaculis nisl odio neque metus varius non viverra, per pharetra dignissim mattis ut vel aenean magna et, lobortis phasellus hendrerit sociis sollicitudin vehicula auctor suscipit. Morbi senectus dignissim enim fermentum praesent quisque per mus, libero primis himenaeos integer habitasse lacinia nisi viverra suspendisse, phasellus nisl natoque conubia tortor malesuada condimentum.</p>
+                <figure>
+                    <img src="images/alienware.jpg" alt="Alienware ATD 900" width="200"/>
+                    <figcaption>Más vendido</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>Impresora 3D</header>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, iaculis dis libero viverra venenatis aliquam et ut, felis phasellus in lectus primis porta. Praesent sagittis iaculis nisl odio neque metus varius non viverra, per pharetra dignissim mattis ut vel aenean magna et, lobortis phasellus hendrerit sociis sollicitudin vehicula auctor suscipit. Morbi senectus dignissim enim fermentum praesent quisque per mus, libero primis himenaeos integer habitasse lacinia nisi viverra suspendisse, phasellus nisl natoque conubia tortor malesuada condimentum.</p>
+                <figure>
+                    <img src="images/imp3d.jpg" alt="Impresora 3D" width="200"/>
+                    <figcaption>Más económico</figcaption>
+                </figure>
+            </article>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <article>
+                <header>Lineas de productos</header>
+                <table border="0">
+                    <thead id="encabezadoTabla">
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Nombre</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaResumen">
+                        <tr>
+                            <td>1</td>
+                            <td>Teclados</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Monitores</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Headsets</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Portatiles</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Perifericos</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <br/>
+            </article>
+        </section>
+        <footer id="piePagina">Derechos Reservaodr &COPY; 2023 <address>Santa Ana, Rio Oro</address><address>TEL:8452-6495</address></footer>
     </body>
 </html>

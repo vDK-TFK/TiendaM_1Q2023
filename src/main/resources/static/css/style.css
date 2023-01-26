@@ -1,0 +1,90 @@
+#encabezado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: #1B55A3;
+    color: white;
+    padding-left: 15px;
+}
+
+#menu {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: #C3DCFF;
+    color: white;
+    padding-left: 15px;
+}
+
+#menu a:visited {
+    color: navy;
+}
+
+#menu a:hover {
+    background-color: #006AFF;
+    color: white;
+}
+
+#barraLateral {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    height: 81%;
+    width: 20%;
+    background-color: #94C0FF;
+    color: white;
+    padding-left: 15px;
+}
+
+#contenido {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    height: 81%;
+    width: 100%;
+    background-color: #E0EDFF;
+    color: black;
+    padding-left: 15px;
+    overflow: auto;
+}
+
+#piePagina {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    background-color: #1B55A3;
+    color: white;
+    padding-left: 15px;
+    text-align: center;
+}
+
+#piePagina address {
+    display: inline;
+}
+
+#encabezadoTabla {
+    font-size: 20px;
+    background-color: lightskyblue;
+    color: black;
+}
+
+#tablaResumen tr:nth-child(odd) {
+    background-color: white;
+    color: black;
+}
+
+#tablaResumen tr:nth-child(even) {
+    background-color: lightskyblue;
+    color: black;
+}
+
+#tablaResumen tr {
+    font-size: 25px;
+    font-weight: bolder;
+}
