@@ -3,39 +3,54 @@
     <head>
         <title>Tienda en linea</title>
         <meta charset="UTF-8">
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="logo nav-link">TechShop</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo8.html">&LeftTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="index.html">&RightTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="audios.html">Audios</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="iframes.html">iFrames</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="formularios.html">Formularios</a></li>
+                </ul>
+            </nav>
+        </header>
         <div>  <!--contenedor-->
             <h1 style="text-align: center;">Ejemplo 9</h1> <!--Titulo nivel 1--> 
             <p>Bienvenidos al curso de Desarrollo Web y Patrones</p>  <!-- Parrafos -->
         </div>
-         <a href="ejemplo8.html">Ir a ejemplo 8</a><br/> <!--ancla con un enlace local, esto dentro del mismo servidor-->
-         
-         <h1>Registro de cliente</h1>
-         
-         <form action="#">
-             <label>Nombre</label>
-             <input placeholder="nombre" type="text" name="nombre" value="" size="20" />
-             <br>
-             <label>Apellidos</label>
-             <input placeholder="apellidos" type="text" name="apellidos" value="" size="30" />
-             <br>
-             <label>Correo</label>
-             <input placeholder="correo@abc.com" type="email" name="correo" value="" size="15" />
-             <br>
-             <label>Contraseña</label>
-             <input placeholder="contraseña" type="password" name="contraseña" value="" size="20" />
-             <br>
-             <label>Genero Masculino</label>
-             <input type="checkbox" name="masculino" value="" size="1" />
-             <label>Genero Femenino</label>
-             <input type="checkbox" name="fenenino" value="" size="1" />
-             <label>No identificar</label>
-             <input type="checkbox" name="noidentificar" value="" size="1" />
-             <br>
-             <input type="reset" value="Borrar" />
-             <input type="submit" value="Registrar" />
-         </form>
-         
+        <a href="ejemplo8.html">Ir a ejemplo 8</a><br/> <!--ancla con un enlace local, esto dentro del mismo servidor-->
+
+        <h1>Registro de cliente</h1>
+
+        <form action="#">
+            <label>Nombre</label>
+            <input placeholder="nombre" type="text" name="nombre" value="" size="20" />
+            <br>
+            <label>Apellidos</label>
+            <input placeholder="apellidos" type="text" name="apellidos" value="" size="30" />
+            <br>
+            <label>Correo</label>
+            <input placeholder="correo@abc.com" type="email" name="correo" value="" size="15" />
+            <br>
+            <label>Contraseña</label>
+            <input placeholder="contraseña" type="password" name="contraseña" value="" size="20" />
+            <br>
+            <label>Genero Masculino</label>
+            <input type="checkbox" name="masculino" value="" size="1" />
+            <label>Genero Femenino</label>
+            <input type="checkbox" name="fenenino" value="" size="1" />
+            <label>No identificar</label>
+            <input type="checkbox" name="noidentificar" value="" size="1" />
+            <br>
+            <input type="reset" value="Borrar" />
+            <input type="submit" value="Registrar" />
+        </form>
+
     </body>
 </html>
