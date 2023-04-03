@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
+    <head th:replace="layout/plantilla :: head">
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <header th:replace="layout/plantilla :: header" />
         <div class="contenido">
-            <h2>Articulos disponibles</h2>
+            <h2 th:text="#{index.titulo}">Articulos disponibles</h2>
             <br/>
             <div th:if="${articulos != null and !articulos.empty}">
                 <table border="1">
                     <thead>
-                    <th>Descripcion</th>
-                    <th>Precio</th>
-                    <th>Acciones</th>
+                    <th th:text="#{articulo.descripcion}">Descripcion</th>
+                    <th th:text="#{articulo.precio}">Precio</th>
+                    <th th:text="#{articulo.comprar}">Acciones</th>
                     </thead>
                     <tbody>
                         <tr th:each="item : ${articulos}">
                             <td th:text="${item.descripcion}"></td>
                             <td th:text="${#numbers.formatDecimal(item.precio, 3, 2)}"></td>
-                            <td><a th:href="@{/carrito/agregar} + ${item.idArticulo}">Comprar</a></td>
+                            <td><a th:href="@{/carrito/agregar} + ${item.idArticulo}"
+                                   th:text="#{accion.agregar}">Comprar</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div th:if="${articulos == null or articulos.empty}">
-                La lista de articulos esta vacia...
+                [[#{articulo.no_mostrar}]]
             </div>
         </div>
         <footer th:replace="layout/plantilla :: footer" />

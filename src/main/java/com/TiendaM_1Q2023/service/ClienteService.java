@@ -12,6 +12,8 @@ public interface ClienteService {
     
     public void save(Cliente cliente); //insertar nuevo registro o modificar (si viene el id cliente o no)
     
+    public List<Cliente> getClientePorNombre(String nombre);
+    
     public void delete(Cliente cliente); //eliminar
     
 }
