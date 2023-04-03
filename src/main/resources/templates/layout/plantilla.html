@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      cmlns:sec="http://thymeleaf.org.thymeleaf-extras-springsegurity">
     <head th:fragment="head">
         <title>Tech Shop</title>
         <meta charset="UTF-8">
@@ -18,7 +19,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav" sec:authorize="hasRole('ROLE_AdMIN') or hasRole('ROLE_VENDEDOR')">
                             <li class="nav-item px-2">
                                 <a class="nav-menu-link nav-link" th:href="@{/cliente/listado}"
                                    th:text="#{plantilla.clientes}">Clientes</a>
@@ -32,7 +33,7 @@
                                    th:text="#{plantilla.articulos}">Articulos</a>
                             </li>
                         </ul>
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ml-auto" sec:authorize='isAuthenticated()'>
                             <li class="nav-item mr-3">
                                 <a href="#" class="nav-link">
                                     <i class="fas fa-user"></i>
@@ -48,15 +49,27 @@
                                 </form>
                             </li>
                         </ul>
+                        <ul class="navbar-nav" sec:authorize="!isAuthenticated()">
+                            <li class="nav-item">
+                                <a class="nav-link" th:href="@{/login}"><i class="fas fa-sign-in-alt">Login</i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
         </header>
-        <footer th:fragment="footer" class="footer">
-            <p>&COPY; [[#{plantilla.derechos}]] 
-                <a th:href="@{/(lang=es)}">ES</a> | 
-                <a th:href="@{/(lang=en)}">EN</a>
-            </p>
+        <footer th:fragment="footer" class="position-fixed bottom-0 start-0 end-0 bg-info text-white mt-5 p-2">
+            <div class="container">
+                <div class="col">
+                    <p class="lead text-center">
+                        &COPY [[#{plantilla.derechos}]]
+
+                        <a th:href="@{/(lang=es)}">ES</a> | 
+
+                        <a th:href="@{/(lang=en)}">EN</a>
+                    </p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
