@@ -41,6 +41,4 @@ public class Cliente implements Serializable {
         this.telefono = telefono;
         this.credito = credito;
     }
-
-    
 }
